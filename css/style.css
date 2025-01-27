@@ -1,0 +1,662 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --primary: #f7f7f7;
+  --secondary: #ffffff;
+  --off-white: #fdfdfd;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Poppins", serif;
+  margin: 0;
+  padding: 20px 20px 0 20px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #1a1a1a;
+  overflow-x: hidden;
+  transition: opacity 0.5s 0.3s ease-in-out;
+  background-color: var(--primary);
+}
+
+/* Navbar CSS start */
+
+.navbar {
+  background-color: var(--secondary);
+  border-radius: 20px;
+  padding: 16px 40px;
+  margin-bottom: 20px;
+  border: 2px solid var(--secondary);
+}
+
+.navbar .nav-item a {
+  color: #1a1a1a !important;
+  margin: 0 20px;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.navbar .nav-item a:focus {
+  font-weight: 500;
+  background-color: var(--primary);
+}
+
+.navbar .nav-item a:hover {
+  background-color: var(--primary);
+  font-weight: 500;
+}
+
+/* Navbar CSS end */
+
+/* First Banner CSS start */
+
+.first-banner {
+  background-color: var(--off-white);
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 20px;
+  border: 2px solid var(--secondary);
+}
+
+.first-banner .heading {
+  margin-bottom: 20px;
+}
+
+.first-banner .heading .yellow {
+  color: #f59e0b;
+}
+
+.first-banner .heading .blue {
+  color: #2563eb;
+}
+
+.first-banner .heading h1 {
+  font-size: 42.6px;
+  font-weight: 700;
+}
+
+.first-banner .sub-heading {
+  margin-bottom: 60px;
+}
+
+.first-banner .sub-heading p {
+  font-size: 21.3px;
+}
+
+.first-banner .banner-btns {
+  margin-bottom: 40px;
+}
+
+.first-banner .banner-btns a {
+  padding: 16px 40px;
+  font-size: 19px;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.first-banner .banner-btns a:nth-child(1) {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+.first-banner .banner-btns a:nth-child(2) {
+  background-color: #fff;
+  color: #f59e0b;
+  border: 2px solid #f59e0b;
+}
+
+.first-banner .banner-chat {
+  background-color: #f1fcfa;
+  width: fit-content;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.first-banner .banner-chat p {
+  font-size: 14.9px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.first-banner .banner-chat img {
+  width: 20px;
+  height: 20px;
+}
+
+.first-banner .banner-chat a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #012345;
+  font-size: 14.9px;
+}
+
+/* First Banner CSS end */
+
+/* Second Banner CSS start */
+
+.second-banner {
+  padding: 40px;
+  background-color: var(--off-white);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  border: 2px solid var(--secondary);
+}
+
+.second-banner .heading h1 {
+  font-size: 42.6px;
+  font-weight: 700;
+}
+
+.second-banner .sub-heading p {
+  font-size: 21.3px;
+  font-weight: 500;
+}
+
+.second-banner .explore-ipo-btn a {
+  background-color: #2563eb;
+  padding: 16px 40px;
+  color: #fff;
+  font-size: 19px;
+}
+
+.second-banner .table {
+  margin-top: 40px;
+}
+
+.second-banner .table th,
+td {
+  position: relative;
+}
+
+td + td::before,
+th + th::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  bottom: 0;
+  left: 0;
+  width: 1.1px;
+  background-image: url("../img/vertical_line.png");
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+}
+
+.second-banner .table thead th {
+  background-color: #f1fcfa;
+  padding: 16px 20px;
+  font-weight: 500;
+  font-size: 14.9px;
+  border-bottom: none;
+}
+
+.second-banner .table tbody td {
+  border-bottom: none;
+  padding: 12px 20px;
+  font-size: 14.9px;
+  font-weight: 500;
+}
+
+.second-banner .table tbody td a#open {
+  width: 100%;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border-color: #2563eb;
+  background-color: rgba(37, 99, 235, 0.25);
+  color: #2563eb;
+}
+
+.second-banner .table tbody td a#closed {
+  width: 100%;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border-color: #df0030;
+  background-color: rgba(223, 0, 48, 0.25);
+  color: #df0030;
+}
+
+.second-banner .table tbody td a#pending {
+  width: 100%;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border-color: #f59e0b;
+  background-color: rgba(245, 158, 11, 0.25);
+  color: #f59e0b;
+}
+
+/* Second Banner CSS end */
+
+/* Our Services CSS start */
+
+.our-services {
+  padding: 40px;
+}
+
+.our-services .heading h1 {
+  font-size: 42.6px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.our-services .sub-heading p {
+  font-size: 21.3px;
+  font-weight: 500;
+}
+
+.our-services .cards .card {
+  border: none;
+  padding: 20px;
+  background-color: var(--off-white);
+  border: 2px solid var(--secondary);
+  width: 375px;
+  max-width: 100%;
+}
+
+.our-services .cards .card .card-link {
+  text-align: right;
+}
+
+.our-services .cards .card .card-link a {
+  text-decoration: none;
+  font-size: 17.6px;
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.our-services .cards .card h5 {
+  font-size: 21.33px;
+  font-weight: 600;
+  color: #012345;
+  margin-bottom: 16px;
+}
+
+.our-services .card-list{
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
+
+.our-services .card-list li::before {
+  content: ">";
+  margin-right: 10px; 
+  color: #000;
+}
+
+.our-services .card ul {
+  margin-top: 16px;
+}
+
+.our-services .card ul li {
+  margin: 4px 0;
+}
+
+.our-services .card ul li a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.our-services .card ul li a:hover {
+  color: #f59e0b;
+}
+
+/* Our Services CSS end */
+
+/* Create Demat Account CSS start */
+
+.create-demat-account {
+  background-color: var(--secondary);
+  border: 2px solid rgba(96, 16, 138, 0.5);
+  padding: 20px 40px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.create-demat-account .left h5 {
+  font-weight: 600;
+  font-size: 25.6px;
+}
+
+.create-demat-account .left p {
+  color: #60108a;
+  font-weight: 600;
+  font-size: 21.3px;
+}
+
+/* #changing-text {
+  animation: fade-in-out 3s infinite;
+  opacity: 0;
+} */
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.create-demat-account .left a {
+  padding: 16px 40px;
+  background-color: #60108a;
+  border-radius: 999px;
+  color: var(--secondary);
+}
+
+.create-demat-account .left img{
+  height: 30px;
+  width: 30px;
+}
+
+/* Create Demat Account CSS end */
+
+/* stay connected stay updated CSS start */
+
+.stay-connected-stay-updated {
+  padding: 40px;
+  background-color: var(--primary);
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.stay-connected-stay-updated .heading {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.stay-connected-stay-updated .heading h2 {
+  font-size: 42.6px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.stay-connected-stay-updated .desc {
+  margin-bottom: 40px;
+}
+
+.stay-connected-stay-updated .desc p {
+  font-size: 19.2px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.stay-connected-stay-updated .contact-us img {
+  width: 75px;
+  height: 75px;
+
+}
+
+.stay-connected-stay-updated .contact-us .whatsapp,
+.message {
+  background-color: var(--off-white);
+  padding: 20px;
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.stay-connected-stay-updated .contact-us .whatsapp:hover,
+.message:hover {
+  border: 2px solid #2563eb;
+}
+
+.stay-connected-stay-updated .whatsapp .text p {
+  font-size: 14.9px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.stay-connected-stay-updated .whatsapp .text a {
+  font-size: 25.6px;
+  font-weight: 700;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.stay-connected-stay-updated .message .text p {
+  font-size: 14.9px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.stay-connected-stay-updated .message .text a {
+  font-size: 25.6px;
+  font-weight: 700;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+/* stay connected stay updated CSS end */
+
+/* Footer CSS start */
+
+.footer {
+  padding: 100px 80px 40px 80px;
+  background-color: var(--secondary);
+  border-radius: 40px 40px 0 0;
+}
+
+.footer .footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer .footer-social {
+  margin-bottom: 20px;
+}
+
+.footer .footer-social img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-links {
+  margin-right: 0;
+}
+
+.footer-links ul {
+  gap: 20px;
+}
+
+.footer-links .nav-item a {
+  color: #1a1a1a !important;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 17px;
+}
+
+.footer-links .nav-item a:focus {
+  font-weight: 500;
+  background-color: var(--primary);
+}
+
+.footer-links .nav-item a:hover {
+  background-color: var(--primary);
+  font-weight: 500;
+}
+
+.footer .disclaimer p {
+  font-size: 14.93px;
+  font-weight: 500;
+  color: #6d6d6d;
+}
+
+.footer .disclaimer p span {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.footer .copyright {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.footer .copyright p {
+  font-size: 14.9px;
+  font-weight: 400;
+}
+
+/* Footer CSS end */
+
+@media only screen and (max-width: 767px) {
+  body {
+    padding: 10px 10px 0 10px;
+  }
+
+  .navbar {
+    padding: 8px 10px;
+  }
+
+  .navbar .navbar-nav {
+    margin: 10px 0;
+  }
+
+  .navbar .nav-item a {
+    margin: 10px 0;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+
+  .first-banner {
+    padding: 20px;
+  }
+
+  .first-banner .heading h1 {
+    font-size: 32px;
+  }
+
+  .first-banner .sub-heading p {
+    font-size: 17px;
+  }
+
+  .first-banner .banner-btns a {
+    padding: 8px 20px;
+    font-size: 17px;
+  }
+
+  .first-banner .banner-btns a {
+    width: 100%;
+  }
+
+  .first-banner .banner-chat {
+    margin-bottom: 30px;
+  }
+
+  .second-banner {
+    padding: 20px;
+  }
+
+  .second-banner .heading h1 {
+    font-size: 32px;
+  }
+
+  .second-banner .sub-heading p {
+    font-size: 17px;
+  }
+
+  .second-banner .explore-ipo-btn a {
+    padding: 8px 20px;
+    font-size: 17px;
+  }
+
+  .our-services {
+    padding: 20px;
+  }
+
+  .our-services .heading h1 {
+    font-size: 32px;
+  }
+
+  .our-services .sub-heading p {
+    font-size: 18px;
+  }
+
+  .our-services .cards .card {
+    margin-bottom: 20px;
+  }
+
+  .create-demat-account {
+    padding: 15px 25px;
+  }
+
+  .create-demat-account .left h5 {
+    font-size: 23px;
+  }
+
+  .create-demat-account .left p {
+    font-size: 20px;
+  }
+
+  .create-demat-account .left a {
+    padding: 8px 20px;
+    margin-bottom: 20px;
+  }
+
+  .create-demat-account .right {
+    display: flex;
+    justify-content: center;
+  }
+
+  .stay-connected-stay-updated {
+    padding: 20px;
+  }
+
+  .stay-connected-stay-updated .heading h2 {
+    font-size: 32px;
+  }
+
+  .stay-connected-stay-updated .desc p {
+    font-size: 17px;
+  }
+
+  .stay-connected-stay-updated .contact-us .whatsapp,
+  .message {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    padding: 50px 40px 20px 40px;
+  }
+
+  .footer-links ul{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+  }
+
+  .footer-links .nav-item a {
+    font-size: 14px;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width:991px){
+  .our-services .cards .card{
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .stay-connected-stay-updated .contact-us .whatsapp,
+  .message {
+    margin-bottom: 20px;
+  }
+
+}
